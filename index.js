@@ -170,6 +170,7 @@ async function run() {
             res.status(403).send({ accessToken: '' });
         })
 
+
         app.get('/bookings/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) }
@@ -265,6 +266,8 @@ async function run() {
             res.send(cursor)
 
         })
+
+        
 
         app.put('/users/verified/:id', verifyJWT, async (req, res) => {
             const decodedEmail = req.decoded.email;
