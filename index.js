@@ -324,6 +324,7 @@ async function run() {
 
         app.post('/wishlist', async (req, res) => {
             
+            //Next Step
             // const wish = req.body;
             // const result = await wishCollection.insertOne(wish)
             // const id = wish.favProductId
